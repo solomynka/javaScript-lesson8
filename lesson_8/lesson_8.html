@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu_button{
+            background-color: rgb(249, 248, 170);
+            font-size: 17px;
+            width: 122px;
+        }
+        .menu_class{
+            margin: 0;
+            padding: 0;
+            display: none;
+        }
+        .menu_li{
+            text-decoration: none;
+            margin: 0;
+            font-size: 12px;
+            background-color: beige;
+            border: 1px black solid;
+            width: 120px;
+            height: 20px;
+
+        }
+        .active{
+            display: block;
+        }        
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <button class="menu_button">
+            <span>Університет</span>
+        </button>
+        <ul class="menu_class">
+            <li class="menu_li">Кафедра економіки</li>
+            <li class="menu_li">Кафедра інформатики</li>
+            <li class="menu_li">Кафежра політології</li>
+        </ul>
+    </nav>
+
+    <div id="text" style="height: 20px; margin-top: 15px;">some text</div>
+    <br>
+    <button onclick="hidenDiv()">Hide text</button>
+    <br>
+    <button onclick="hidenBut()" class="buttonForHidde" style="margin-top: 15px;">Hide button</button>
+
+    <script src="selector_lesson8.js"></script>
+</body>
+</html>
